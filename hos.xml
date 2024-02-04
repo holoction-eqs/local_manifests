@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="arr"
+           fetch="https://github.com/ArrowOS"
+           review="https://review.arrowos.net/"
+           revision="refs/heads/arrow-14.0" />
+  <remote name="hl"
+          fetch="https://github.com/holoction-eqs"
+          revision="Ursamoon" />
+
+  <remove-project name="platform_vendor_qcom_opensource_interfaces" />
+  <remove-project name="platform_vendor_codeaurora_telephony" />
+  <remove-project name="platform_vendor_qcom_opensource_data-ipa-cfg-mgr" />
+  <remove-project name="platform_vendor_qcom_opensource_interfaces" />
+  <remove-project name="platform/frameworks/av" />
+  <remove-project name="platform_frameworks_base" />
+  <remove-project name="platform_vendor_hentai" />
+  <remove-project name="platform/system/core" />
+
+  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="vendor_qcom_opensource_data-ipa-cfg-mgr" remote="hl" />
+  <project path="frameworks/av" name="platform_frameworks_av" remote="hl" />
+  <project path="frameworks/base" name="platform_frameworks_base" remote="hl" />
+  <project path="vendor/hentai" name="vendor_hentai" remote="hl" />
+  <project path="system/core" name="platform_system_core" remote="hl" />
+
+  <project path="vendor/codeaurora/telephony" name="android_vendor_codeaurora_telephony" remote="arr" />
+  <project path="vendor/qcom/opensource/audio" name="android_vendor_qcom_opensource_audio" remote="arr" />
+  <project path="vendor/qcom/opensource/audio-hal/st-hal" name="android_vendor_qcom_opensource_audio-hal_st-hal" remote="arr" />
+  <project path="vendor/qcom/opensource/commonsys/display" name="android_vendor_qcom_opensource_display-commonsys" remote="arr" />
+  <project path="vendor/qcom/opensource/commonsys-intf/display" name="android_vendor_qcom_opensource_display-commonsys-intf" remote="arr" />
+  <project path="vendor/qcom/opensource/dataservices" name="android_vendor_qcom_opensource_dataservices" remote="arr" />
+  <project path="vendor/qcom/opensource/healthd-ext" name="android_vendor_qcom_opensource_healthd-ext" remote="arr"/>
+  <project path="vendor/qcom/opensource/interfaces" name="android_vendor_qcom_opensource_interfaces" remote="arr" />
+  <project path="vendor/qcom/opensource/power" name="android_vendor_qcom_opensource_power" remote="arr" />
+  <project path="vendor/qcom/opensource/thermal-engine" name="android_vendor_qcom_opensource_thermal-engine" remote="arr" />
+  <project path="vendor/qcom/opensource/usb" name="android_vendor_qcom_opensource_usb" remote="arr" />
+  <project path="vendor/qcom/opensource/vibrator" name="android_vendor_qcom_opensource_vibrator" remote="arr" />
+
+</manifest>
